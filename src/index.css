@@ -7,7 +7,40 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Square{
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  float:left;
+}
+
+.Square:focus{
+  outline: none;
+  background-color: white;
+}
+
+.game{
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info{
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.board-row::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.container{
+  margin-left: 45%;
 }
